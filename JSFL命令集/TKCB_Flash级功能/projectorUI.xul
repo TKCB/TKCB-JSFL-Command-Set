@@ -1,0 +1,62 @@
+<dialog id="projUI" title="作为放映文件导出">
+  <hbox>
+    <vbox>
+      <label id="lblOutput" value="输出到 :"/>
+      <textbox id="directory" multiline="false" width="250" value="" oncreate=""/>
+    </vbox>
+    <vbox>
+      <label value=" "/>
+      <button id="browse" label="浏览" width="10" oncommand="fl.xmlui.set('directory',browseFolder())"/>
+    </vbox>
+  </hbox>
+  <label value=" " width="30"/>
+  <vbox class="platform" groupbox="true">
+    <checkbox class="platform" id="winSelected" label=" Windows (.exe)" checked="false" width="160"/>
+    <checkbox class="platform" id="macSelected" label=" Mac (.app)" checked="false"/>
+  </vbox>
+  <label value=" "/>
+  <hbox>
+    <label value=" " width="150"/>
+    <button id="accept" label="导出" width="30" dlgType="accept" oncommand="validateAndAccept()"/>
+    <button id="cancel" label="取消" width="30" oncommand="fl.xmlui.cancel()" oncreate="init();"/>
+  </hbox>
+  <script>// Iniliaze the Export Path with fla location
+          function init() {
+               var docPath, docURI, index, exportPath, lastUsedURI;
+               try {
+                   lastUsedURI = FLfile.read(fl.configURI + 'Projector/lastUrl').split('\n'); 
+                   if(lastUsedURI[0] == fl.getDocumentDOM().name) {
+                       exportPath = FLfile.uriToPlatformPath(lastUsedURI[1]);
+                   }
+                   else 
+                   {
+                       docPath = fl.getDocumentDOM().path;
+                    docURI = FLfile.platformPathToURI(docPath);
+                    index = docURI.lastIndexOf('/',docURI.length);
+                    exportPath = FLfile.uriToPlatformPath(docURI.slice(0,index) + '/');
+                }
+            }
+            catch (e) {    exportPath = "";    }
+        
+              fl.xmlui.set('directory', exportPath);          
+          }
+
+          //Browse for folder
+          function browseFolder() {
+              //fl.xmlui.setEnabled('directory',false);
+              var folderURI = fl.browseForFolderURL(fl.getLocalizedString("$$$/Projector/IDS_UI_FILE_BROWSER=Export Projector")); //"Export Projector"
+              if(folderURI)
+                  return FLfile.uriToPlatformPath(folderURI);
+              else
+                  return fl.xmlui.get('directory','value');
+          }
+          
+          //Validate location in submit button
+          function validateAndAccept() {
+              if(FLfile.exists(FLfile.platformPathToURI(fl.xmlui.get('directory')))) {                  
+                  fl.xmlui.accept()
+              }
+              else
+                  alert(fl.getLocalizedString("$$$/Projector/IDS_UI_ERR_PATH=Please browse for a valid location for generating Projector.")); //'Please browse for a valid location for generating Projector.'
+          }</script>
+</dialog>
