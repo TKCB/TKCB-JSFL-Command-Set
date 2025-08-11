@@ -1,10 +1,12 @@
 # Animate & Flash JSFL 命令集，随时更新....
+
+## 简介
 这是我们TKCB乐队开发的JSFL命令集（70多个，但其实git上面暂时为旧版，新版早已100+个）。
 
 JSFL是Flash（Animate）软件，内部的操作命令代码，可帮助动画师和开发者的更好的使用Flash软件。
 
 
-### JSFL其实是被大家忽略的重要功能
+## JSFL其实是被大家忽略的重要功能
 在Flash的菜单栏中，有一个命令菜单，其实这就是JSFL，她很简单，就是你选下菜单的子项目点击就可以了。
 
 她可以神奇的实现一些看似复杂的功能，比如重命名所有库元件，导出所有库的图片声音视频等等。
@@ -13,7 +15,7 @@ JSFL是Flash（Animate）软件，内部的操作命令代码，可帮助动画�
 
 
 
-### 一些废话
+## 一些废话
 由于前一短时间学习了Java Script，故对于JS有了一定的了解（其实AS3和JS有很多类似的地方）。
 
 最近对Flash JSFL有一点点兴趣，于是学习之，随着学习的深入渐渐的感觉JSFL相当腻害！
@@ -26,7 +28,7 @@ JSFL是Flash（Animate）软件，内部的操作命令代码，可帮助动画�
 
 
 
-### 将JSFL导入到Flash命令菜单中（寻找JSFL命令存放地址）
+## 将JSFL导入到Flash命令菜单中（寻找JSFL命令存放地址）
 把“TKCB_寻找JSFL命令存放地址.jsfl”文件，用鼠标拖拽到Flash （Animate）软件中会在输出面板中显示JSFL命令的存放路径地址，然后将所有的TKCB命令文件夹复制到其中就可以了。
 
 点这里查看视频教程：http://www.11ria.com/forum.php?mod=viewthread&tid=1876
@@ -349,7 +351,7 @@ JSFL是Flash（Animate）软件，内部的操作命令代码，可帮助动画�
 
 
 
-### 再来一些废话
+## 再来一些废话
 由于我也在学习，故不保证我写的都是正确的，希望能有高手不吝赐教。
 
 还有还有我会不断更新我写的JSFL命令集的，所以偶尔可以点个赞，再来看看，或许有惊喜。
@@ -360,7 +362,7 @@ JSFL是Flash（Animate）软件，内部的操作命令代码，可帮助动画�
 
 
 
-### 最后的祝福
+## 最后的祝福
 祝愿大家学习愉快，工作开心、生活如意，遇到挫折苦难逆境也要勇敢向前走……
 
 真诚的希望我们的软件和游戏，帮助到了大家，也感谢您的使用……
@@ -368,5 +370,41 @@ JSFL是Flash（Animate）软件，内部的操作命令代码，可帮助动画�
 但愿我们都可以做一个改变世界的人，也不要被世界改变。
 
 
-### 许可证
+## 关于我们
+大家好，我是TKCB-Gm。
+
+一个有着游戏策划梦，却成为程序猿的游乐家，我的游戏职业是游吟诗人。
+
+我来自TKCB乐队，我是乐队队长，也是目前乐队的唯一成员，兵在于精而不是多，故而一直没有找到合适的乐队新成员。
+
+有没有想交个朋友呢？我愿结交天下朋友，不论中外古今！
+
+下面是我的一些信息，有事请联系，乐队的事情也请和我联系：
+
+E-mail ：tkcb@qq.com
+
+微 信 号：TKCB-Gm
+
+QQ号码：2414268040 （TKCB-Gm）
+
+QQ空间：[http://2414268040.qzone.qq.com](http://2414268040.qzone.qq.com)
+
+QQ群①：96759336 （Flash 闪侠）
+
+QQ群②：463560360 （King系列软件官方群）
+
+QQ群③：1007108140 （Gods系列游戏官方群）
+
+乐队网站：[www.tkcb.cc ](http://www.tkcb.cc) （TKCB乐队）
+
+旧技术论坛：[www.11ria.com](http://www.11ria.com) （11RIA 闪客社区，即将关闭）
+
+新技术网站：[www.theflash.cc](http://www.theflash.cc) （The Flash，闪侠，新的论坛，即将重建）
+
+King系列软件官网：[king.tkcb.cc](http://king.tkcb.cc) （King Soft，王的软件）
+
+Gods系列游戏官网：[game.tkcb.cc](http://game.tkcb.cc) （Gods Game，神的游戏）
+
+
+## 许可证
 [MIT](https://github.com/TKCB/TKCB-JSFL-Command-Set/blob/main/LICENSE)
